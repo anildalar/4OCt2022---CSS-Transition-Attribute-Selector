@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>FullStack Dev Day 8</title>
+        <meta charset="utf-8" />
+        <link href="./css/style.css" rel="stylesheet" />
+        <style>
+            div{
+                display: inline-block;
+                text-align: center;
+                line-height:300px;
+                color: white;
+                font-size:3em;
+                font-family: Arial, Helvetica, sans-serif;
+                text-decoration: underline;
+              
+            }
+            [data-a="box1"]{
+                width: 300px;
+                height: 300px;
+                background-color:red;
+                border-top-left-radius: 300px;
+                border-bottom-right-radius: 300px;
+            }
+            .b{
+                width: 300px;
+                height: 300px;
+                background-color:orange;
+                border-top-right-radius: 300px;
+                border-bottom-left-radius: 300px;
+            }
+            #cbox{
+                width: 300px;
+                height: 300px;
+                background-color:blue;
+                transition-property: background-color;
+                transition-duration:3s;
+                border-top-left-radius: 300px;
+                border-bottom-right-radius: 300px;
+            }
+            #cbox:hover{
+                background-color:green;
+               
+            }
+    
+        </style>
+    </head>
+    <body>
+        <div data-a="box1">A</div>
+        <div data-b="box2" class="b" id="bbox">B</div>
+        <div data-c="box3" class="c" id="cbox">C</div>
+        <div data-d="box4" class="d" id="dbox">Devendra</div>
+    </body>
+</html>
